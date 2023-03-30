@@ -1,4 +1,4 @@
-name: ubuntu-builder psibase-cli container
+name: Build psibase docker image
 
 env:
   GITHUB_OUTPUT: ""
