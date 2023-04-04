@@ -16,7 +16,7 @@ COPY --from=base / /
 ENV PSIDK_HOME=/opt/psidk-ubuntu-2004
 ENV PATH=$PSIDK_HOME/bin:$PATH
 
-LABEL org.opencontainers.image.title="Psibase-CLI_Ubuntu-20.04" \
+LABEL org.opencontainers.image.title="Psibase CLI" \
     org.opencontainers.image.description="This docker image provides access to the Psibase CLI tool for local or remote administration of a Psinode instance." \
     org.opencontainers.image.vendor="Fractally LLC" \
     org.opencontainers.image.url="https://github.com/gofractally/psibase-cli-image" \
