@@ -12,7 +12,7 @@ on:
 
 jobs:
   ubuntu-builder:
-    name: psibase-cli_image_builder
+    name: psibase_image_builder
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -25,7 +25,7 @@ jobs:
         id: prep
         run: |
           REGISTRY="ghcr.io"
-          IMAGE="${REGISTRY}/${{ github.repository_owner }}/psibase-cli"
+          IMAGE="${REGISTRY}/${{ github.repository_owner }}/psibase"
           TAGS="${IMAGE}:${{ github.sha }},${IMAGE}:${{ github.event.inputs.psinode-version }}"
           echo "tags=${TAGS,,}" >> $GITHUB_OUTPUT
       - name: Showtag
